@@ -1,0 +1,44 @@
+<div class="footer" [ngStyle]="{'position':test}">
+    <div class="left">
+       <div>
+        <div class="fb">
+           <a href="https://www.facebook.com/Avvatta-109816714518275/"> 
+            <img src="../../../assets/icons/face.png" />
+           </a>
+        </div>
+        <div class="fb">
+            <a href="https://twitter.com/Avvatta1">
+                <img src="../../../assets/icons/t.png" />
+            </a>
+        </div>
+        <div class="fb">
+            <a href="https://www.youtube.com/channel/UCfQj2tq3YEE447z5xQ7Dyzw?view_as=subscriber">
+                <img src="../../../assets/icons/y.png" />
+            </a>
+        </div>
+        <div class="fb">
+            <a href="https://www.instagram.com/avvatta.za/">
+                <img src="../../../assets/icons/i.png" />
+            </a>
+        </div>
+       </div>
+    </div>
+    <div class="center">
+        <div>
+            <div class="help" [routerLink]="['/about']">About Us</div>
+            <div class="help" (click)="help('faq')">FAQ</div>
+            <div class="help" (click)="help('terms')">Terms & Conditions</div>
+            <div class="help" (click)="help('privacy')">Privacy and Policy</div>
+            <!-- <div class="help" (click)="giftModal()">Redeem Voucher</div> -->
+            <div class="help" (click)="chooseModal()">Packages</div>
+        </div>
+    </div>
+</div>
+<div class="f2 footer1">
+    <div class="left">
+        Avvatta, a product of Digital Media 333 Pty Ltd. All rights reserved. SSL certified
+    </div>
+    <div class="paygateimg">
+        <!-- <img *ngIf="hideFooter" src="../../../assets/image001.png" /> -->
+    </div>
+</div>
