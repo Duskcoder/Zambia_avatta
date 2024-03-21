@@ -94,22 +94,22 @@ export class CommonService {
 
   apiConstant() {
     if (localStorage.getItem('firstname') != null) {
-      if (window.location.href.split('/')[2] == 'gh.avvatta.com') {
-        // if (window.location.href.split('/')[2] == 'localhost:4200'){
+      // //if (window.location.href.split('/')[2] == 'gh.avvatta.com') {
+      //   if (window.location.href.split('/')[2] == 'localhost:4200'){
 
-        this.statusSubscribeApi = 'ghstatus_subcrib';
-        this.singleSubscription = 'ghsubscription_index';
-      }
-      else {
-        if (JSON.parse(localStorage.getItem('log')).ghana_user == 1) {
-          this.statusSubscribeApi = 'ghstatus_subcrib';
-          this.singleSubscription = 'ghsubscription_index';
-        }
-        else {
-          this.statusSubscribeApi = 'status_subcrib';
-          this.singleSubscription = 'subscription_index';
-        }
-      }
+      //   this.statusSubscribeApi = 'ghstatus_subcrib';
+      //   this.singleSubscription = 'ghsubscription_index';
+      // }
+      // else {
+      //   if (JSON.parse(localStorage.getItem('log')).ghana_user == 1) {
+      //     this.statusSubscribeApi = 'ghstatus_subcrib';
+      //     this.singleSubscription = 'ghsubscription_index';
+      //   }
+      //   else {
+      //     this.statusSubscribeApi = 'status_subcrib';
+      //     this.singleSubscription = 'subscription_index';
+      //   }
+      // }
     }
     else {
       this.statusSubscribeApi = 'status_subcrib';
@@ -655,11 +655,11 @@ export class CommonService {
   }
 
 
-  getTokenForGhanaUser(data) {
-    return this.http.post(this.urlApi + 'ghgetuserfromtoken', data, {
-      headers: this.headers
-    });
-  }
+  // getTokenForGhanaUser(data) {
+  //   return this.http.post(this.urlApi + 'ghgetuserfromtoken', data, {
+  //     headers: this.headers
+  //   });
+  // }
 
 
   siyavulaData(data) {
@@ -777,7 +777,7 @@ export class CommonService {
       }
 
       if (window.location.href.split('/')[2] == 'zm.avvatta.com') {
-        //if (window.location.href.split('/')[2] == 'localhost:4200') {
+      //if (window.location.href.split('/')[2] == 'localhost:4200') {
         let hex = {
           "hexcode": mn,
           "mobile": mobileNumber,
@@ -877,12 +877,12 @@ export class CommonService {
         msisdn: res[0].mobile,
         // mondia_session: mondia_session
       }
-      this.service.ghclearLoggeddevice(datas).subscribe(res1 => {
+    //  this.service.ghclearLoggeddevice(datas).subscribe(res1 => {
 
-        //console.error('hsfbjhsd', res1);
-        this.initialLogin(res[0].pid, mondia_session);
-      }
-      );
+    //     //console.error('hsfbjhsd', res1);
+    //     this.initialLogin(res[0].pid, mondia_session);
+    //   }
+    //   );
     });
 
 

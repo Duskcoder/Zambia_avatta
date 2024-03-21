@@ -15,7 +15,7 @@ const routes: Routes = [
     
     {
         path: '',
-        component: KidsMainpageComponent
+        component: LandingComponent
 
     },
     {

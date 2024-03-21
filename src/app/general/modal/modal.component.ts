@@ -111,9 +111,9 @@ export class ModalComponent implements OnInit {
     if (window.location.href.split('/')[2] == 'avvatta.com' || window.location.href.split('/')[2] == 'www.avvatta.com') {
       this.countryCode = +27
     }
-    else if (window.location.href.split('/')[2] == 'gh.avvatta.com') {
-      this.countryCode = +233
-    }
+    // else if (window.location.href.split('/')[2] == 'gh.avvatta.com') {
+    //   this.countryCode = +233
+    // }
     else if (window.location.href.split('/')[2] == 'ng.avvatta.com') {
       this.countryCode = +234
     }
